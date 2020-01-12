@@ -35,7 +35,8 @@ The GNU GPL is the most widely used free software license and has a strong copyl
 
 # 交流
 
-+ Email： [![AUR](https://img.shields.io/badge/chat-t4cloud-brightgreen)](https://www.t4cloud.com)
++ Email： [zqr.it@t4cloud.com](email://zqr.it@t4cloud.com)
++ Web Site： [T4CLOUD](https://www.t4cloud.com)
 
 # 捐赠
 
