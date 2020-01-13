@@ -45,7 +45,8 @@ services:
       # # the following setting starts chaincode containers on the same
       # # bridge network as the peers
       # # https://docs.docker.com/compose/networking/
-      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=deploy_default # cc与peer节点使用同一个网络
+      # peer节点使用相同网络
+      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=deploy_default
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
     command: peer node start
 
@@ -159,6 +160,6 @@ services:
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric/
     command: /bin/bash
     volumes:
-      - ./chaincode:/opt/gopath/src/github.com/chaincode # 链码路径注入
+      - ./../chaincode:/opt/gopath/src/github.com/chaincode # 链码路径注入
       - ./config:/etc/hyperledger/config
       - ./crypto-config/peerOrganizations/org1.t4cloud.com/:/etc/hyperledger/peer
